@@ -2,7 +2,6 @@ import React, {Component} from 'react';
 import MyButton from "../utilities/button";
 import Zoom from'react-reveal/Zoom';
 
-
 class Pricing extends Component {
     state = {
         prices:[100,150,250],
