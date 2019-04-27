@@ -21,6 +21,7 @@ const Carrousel = () =>{
             className="carrousel_wrapper"
             style={{
                 height:`${window.innerHeight}px`,
+                width:`${window.innerWidth}px`,
                 overflow:'hidden'
             }}
         >
@@ -31,6 +32,7 @@ const Carrousel = () =>{
                         style={{
                             background:`url(${slide_one})`,
                             height:`${window.innerHeight}px`,
+                            width:`${window.innerWidth}px`,
                         }}
                     >
                     </div>
@@ -41,6 +43,7 @@ const Carrousel = () =>{
                         style={{
                             background:`url(${slide_two})`,
                             height:`${window.innerHeight}px`,
+                            width:`${window.innerWidth}px`,
                         }}
                     >
                     </div>
@@ -51,6 +54,7 @@ const Carrousel = () =>{
                         style={{
                             background:`url(${slide_three})`,
                             height:`${window.innerHeight}px`,
+                            width:`${window.innerWidth}px`,
                         }}
                     >
                     </div>

@@ -1,4 +1,6 @@
 
+
+
 body {
     padding:0;
     margin:0;
@@ -30,6 +32,11 @@ body {
 .center_wrapper {
     width: 900px;
     margin:0 auto;
+}
+@media screen and (max-width:900px){
+    .center_wrapper{
+        width: 100%;
+    }
 }
 
 
@@ -83,6 +90,7 @@ footer .footer_copyright {
 .carrousel_image {
     
     background-size: cover !important;
+    background-position-x: 50% !important;
 }
 
 .artist_name {
@@ -94,6 +102,11 @@ footer .footer_copyright {
     -webkit-transform: translate(-50%, -50%);  
     transform: translate(-50%, -50%);   
     border: 2px solid white;
+}
+@media screen and (max-width:400px){
+    .artist_name{
+        width: 300px;
+    }
 }
 
 .artist_name .wrapper {
@@ -139,6 +152,16 @@ footer .footer_copyright {
     margin-right: 14px;
     padding-right: 49px;
 }
+@media screen and (max-width:605px){
+    .countdown_wrapper .countdown_time{
+        font-size: 2rem;
+    }
+}
+@media screen and (max-width:400px){
+    .countdown_wrapper .countdown_time{
+        font-size: 0.8rem;
+    }
+}
 .countdown_wrapper .countdown_item:last-child .countdown_time{
     border:none;
 }
@@ -148,6 +171,13 @@ footer .footer_copyright {
     font-size: 20px;
     padding-left: 7px;
 }
+@media screen and (max-width:400px){
+    .countdown_wrapper .countdown_tag{
+        font-size: 15px;
+        padding-left: 0;
+    }
+}
+
 
 /*====================
         VENUE NFO
@@ -157,11 +187,28 @@ footer .footer_copyright {
     display: flex;
     padding: 170px 0px;
 }
+@media screen and (max-width:605px){
+    .vn_wrapper {
+        display: flex;
+        padding: 100px 0px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 .vn_item {
     width:50%;
     color:#ffffff;
     text-align: center;
+}
+@media screen and (max-width:605px){
+    .vn_item{
+        width: 100%;
+    }
+    .vn_item:nth-child(1){
+        margin-bottom: 7rem;
+    }
+
 }
                       
 .vn_item .vn_outer {
@@ -236,14 +283,36 @@ footer .footer_copyright {
     border-bottom: 1px solid #dddddd;
     padding: 30px 0px;
 }
+@media screen and (max-width:605px){
+    .highlight_wrapper .highlight_description{
+        padding: 30px 15px;
+    }
+}
 
 .discount_wrapper {
     display: flex;
     padding: 70px 0px;
 }
+@media screen and (max-width:605px){
+    .discount_wrapper{
+        align-items: center;
+    }
+}
+@media screen and (max-width:605px){
+    .discount_wrapper{
+        align-items: center;
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+}
 
 .discount_wrapper .discount_porcentage {
     padding-right: 100px;
+}
+@media screen and (max-width:605px){
+    .discount_wrapper .discount_porcentage {
+        padding-right: 50px;
+    } 
 }
 
 .discount_wrapper .discount_porcentage span:nth-child(1) {
@@ -296,11 +365,25 @@ footer .footer_copyright {
     display: flex;
     flex-wrap: wrap;
 }
+@media screen and (max-width:605px){
+    .pricing_wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 .pricing_wrapper .pricing_item{
     flex-grow: 1;
     width: 33%;
     padding: 20px;
     box-sizing: border-box;
+}
+@media screen and (max-width:605px){
+    .pricing_wrapper .pricing_item{
+        width: 100%;
+    }
 }
 
 .pricing_wrapper .pricing_inner_wrapper {
