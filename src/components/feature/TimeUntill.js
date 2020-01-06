@@ -4,7 +4,7 @@ import Slide from 'react-reveal/Slide';
 
 class TimeUntill extends Component{
     state ={
-        deadline:'Dec, 16 , 2019',
+        deadline:'Jul, 16 , 2020',
         days:'0',
         hours:'0',
         minutes:'0',
